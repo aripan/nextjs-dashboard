@@ -4,7 +4,7 @@ import NavbarUI from "../ui/dashboard/navbar/navbar";
 import styles from "../ui/dashboard/dashboard.module.css";
 
 export interface IDashboardLayoutProps {
-  children: any;
+  children: React.ReactNode;
 }
 
 const DashboardLayout: React.FunctionComponent<IDashboardLayoutProps> = ({
