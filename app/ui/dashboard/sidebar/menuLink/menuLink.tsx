@@ -4,14 +4,14 @@ import styles from "./menuLink.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export interface IMenuLinkProps {
+export interface IMenuLinkUIProps {
   item: {
     title: string;
     path: string;
     icon: React.JSX.Element;
   };
 }
-const MenuLink: React.FunctionComponent<IMenuLinkProps> = ({ item }) => {
+const MenuLinkUI: React.FunctionComponent<IMenuLinkUIProps> = ({ item }) => {
   const pathname = usePathname();
 
   return (
@@ -26,4 +26,4 @@ const MenuLink: React.FunctionComponent<IMenuLinkProps> = ({ item }) => {
     </Link>
   );
 };
-export default MenuLink;
+export default MenuLinkUI;

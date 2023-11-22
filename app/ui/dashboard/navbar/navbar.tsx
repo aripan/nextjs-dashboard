@@ -9,9 +9,9 @@ import {
   MdSearch,
 } from "react-icons/md";
 
-export interface INavbarProps {}
+export interface INavbarUIProps {}
 
-const NavbarUI: React.FunctionComponent<INavbarProps> = (props) => {
+const NavbarUI: React.FunctionComponent<INavbarUIProps> = (props) => {
   const pathname = usePathname();
   return (
     <div className={styles.container}>

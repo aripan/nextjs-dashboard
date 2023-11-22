@@ -12,10 +12,10 @@ import {
   MdSupervisedUserCircle,
   MdWork,
 } from "react-icons/md";
-import MenuLink from "./menuLink/menuLink";
 import Image from "next/image";
+import MenuLinkUI from "./menuLink/menuLink";
 
-export interface ISidebarProps {}
+export interface ISidebarUIProps {}
 
 const menuItems = [
   {
@@ -80,7 +80,7 @@ const menuItems = [
   },
 ];
 
-const SidebarUI: React.FunctionComponent<ISidebarProps> = (props) => {
+const SidebarUI: React.FunctionComponent<ISidebarUIProps> = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.user}>
@@ -102,7 +102,7 @@ const SidebarUI: React.FunctionComponent<ISidebarProps> = (props) => {
           <li key={menuItem.title}>
             <span className={styles.category}>{menuItem.title}</span>
             {menuItem.list.map((item) => (
-              <MenuLink key={item.title} item={item} />
+              <MenuLinkUI key={item.title} item={item} />
             ))}
           </li>
         ))}
